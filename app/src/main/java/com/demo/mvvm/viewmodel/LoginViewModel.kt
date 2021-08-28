@@ -14,6 +14,7 @@ class LoginViewModel : ViewModel(), LifecycleObserver {
     val isLoginSuccess = MutableLiveData<Boolean>().apply { value = false }
 
     private fun handleLogin(user: User) {
+        // Handle logical data with remote data or local data
         isLoginSuccess.value = true
     }
 
